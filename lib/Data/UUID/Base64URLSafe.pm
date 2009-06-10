@@ -1,9 +1,9 @@
 package Data::UUID::Base64URLSafe;
 use strict;
 use warnings;
-use Data::UUID;
 use MIME::Base64::URLSafe;
 use base qw(Data::UUID);
+our @EXPORT = @{Data::UUID::EXPORT};
 our $VERSION = '0.33';
 
 sub new {
@@ -17,6 +17,27 @@ sub create_b64_urlsafe {
     my $self = shift;
     return urlsafe_b64encode( $self->create );
 }
+
+
+
+sub create_from_name_b64_urlsafe {
+    my $self = shift;
+    return urlsafe_b64encode( $self->create_from_name(@_) );
+}
+
+sub to_b64_urlsafe {
+    my $self = shift;
+    my $uuid = shift;
+    return urlsafe_b64encode( $uuid );
+}
+
+
+sub from_b64_urlsafe {
+    my $self = shift;
+    my $uuid = shift;
+    return urlsafe_b64decode( $uuid );
+}
+
 
 1;
 
@@ -54,6 +75,25 @@ The constructor:
 Create a URL-safe Base64-encoded UUID:
 
   my $uuid = $ug->create_b64_urlsafe;
+
+=head2 create_from_name_b64_urlsafe
+
+Creates a URL-safe Base64 encoded UUID with the namespace and data 
+specified (See the L<Data::UUID> docs on create_from_name
+
+=head2 from_b64_urlsafe
+
+   my $uuid2 = $ug−>create_from_name_b64_urlsafe(<namespace>, <name>);
+
+
+=head2 to_b64_urlsafe
+
+Convert a binary UUID to a URL-safe Base64 encoded UUID
+
+=head2 from_b64_urlsafe
+
+Convert a Base 64-encoded URL-safe UUID to its canonical binary representation
+
 
 =head1 AUTHOR
 
