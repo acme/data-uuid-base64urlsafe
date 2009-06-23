@@ -3,8 +3,8 @@ use strict;
 use warnings;
 use MIME::Base64::URLSafe;
 use base qw(Data::UUID);
-our @EXPORT = @{Data::UUID::EXPORT};
-our $VERSION = '0.33';
+our @EXPORT  = @{Data::UUID::EXPORT};
+our $VERSION = '0.34';
 
 sub new {
     my $class = shift;
@@ -18,8 +18,6 @@ sub create_b64_urlsafe {
     return urlsafe_b64encode( $self->create );
 }
 
-
-
 sub create_from_name_b64_urlsafe {
     my $self = shift;
     return urlsafe_b64encode( $self->create_from_name(@_) );
@@ -28,16 +26,14 @@ sub create_from_name_b64_urlsafe {
 sub to_b64_urlsafe {
     my $self = shift;
     my $uuid = shift;
-    return urlsafe_b64encode( $uuid );
+    return urlsafe_b64encode($uuid);
 }
-
 
 sub from_b64_urlsafe {
     my $self = shift;
     my $uuid = shift;
-    return urlsafe_b64decode( $uuid );
+    return urlsafe_b64decode($uuid);
 }
-
 
 1;
 
