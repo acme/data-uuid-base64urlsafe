@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use MIME::Base64;
 
-our $VERSION = "0.01";
+our $VERSION = "0.35";
 
 use base qw( Data::UUID );
 our @EXPORT  = @Data::UUID::EXPORT;
@@ -103,14 +103,13 @@ sub to_b64_urlsafe {
     my $bin = shift;
     return MIME::Base64::encode_base64url($bin);
 }
-
 1;
 __END__
 
 =head1 AUTHOR
 
 Leon Brocard, C<< <acme@astray.com> >>,
-Yuki Yoshida(worthmine) C< <worthmine@gmail.com> >
+Yuki Yoshida(worthmine) C<< <worthmine@gmail.com> >>
 
 =head1 LICENSE
 

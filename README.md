@@ -54,7 +54,7 @@ Convert a binary UUID to a URL-safe Base64 encoded UUID
 # AUTHOR
 
 Leon Brocard, `<acme@astray.com>`,
-Yuki Yoshida(worthmine) ` <worthmine@gmail.com` >
+Yuki Yoshida(worthmine) `<worthmine@gmail.com>`
 
 # LICENSE
 
