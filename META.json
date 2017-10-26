@@ -1,7 +1,7 @@
 {
-   "abstract" : "URL-safe UUIDs",
+   "abstract" : "getting Data::UUID with URLSafe strings",
    "author" : [
-      "Leon Brocard, C<< <acme@astray.com> >>"
+      "Leon Brocard, C<< <acme@astray.com> >>,"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v3.0.13, CPAN::Meta::Converter version 2.150010",
@@ -49,7 +49,8 @@
          "requires" : {
             "Data::UUID" : "0",
             "MIME::Base64::URLSafe" : "0",
-            "Test::More" : "0.01"
+            "Test::More" : "0.01",
+            "perl" : "5.008001"
          }
       }
    },
@@ -65,11 +66,12 @@
          "web" : "https://github.com/worthmine/Data-UUID-Base64URLSafe"
       }
    },
-   "version" : "0.34",
+   "version" : "0.01",
    "x_authority" : "cpan:WORTHMINE",
    "x_contributors" : [
       "Jesse Vincent <jesse@bestpractical.com>",
-      "Leon Brocard <acme@astray.com>"
+      "Leon Brocard <acme@astray.com>",
+      "Yuki Yoshida <worthmine@gmail.com>"
    ],
    "x_serialization_backend" : "JSON::PP version 2.93"
 }
