@@ -39,6 +39,8 @@ sub from_b64_urlsafe {
 
 __END__
 
+=encoding utf-8
+
 =head1 NAME
 
 Data::UUID::Base64URLSafe - URL-safe UUIDs
@@ -79,7 +81,7 @@ specified (See the L<Data::UUID> docs on create_from_name
 
 =head2 from_b64_urlsafe
 
-   my $uuid2 = $ug−>create_from_name_b64_urlsafe(<namespace>, <name>);
+ my $uuid2 = $ug−>create_from_name_b64_urlsafe(<namespace>, <name>);
 
 
 =head2 to_b64_urlsafe
