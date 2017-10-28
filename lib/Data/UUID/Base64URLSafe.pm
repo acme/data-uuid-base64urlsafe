@@ -96,6 +96,9 @@ sub from_b64_urlsafe {
 
 Convert a binary UUID to a URL-safe Base64 encoded UUID
 
+ my $bin = $ug->create_from_name(<namespace>, <name>);
+ my $uuid = $ug−>to_b64_urlsafe($bin);
+
 =cut
 
 sub to_b64_urlsafe {
@@ -103,6 +106,7 @@ sub to_b64_urlsafe {
     my $bin = shift;
     return MIME::Base64::encode_base64url($bin);
 }
+
 1;
 __END__
 
