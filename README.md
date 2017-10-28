@@ -51,6 +51,9 @@ Convert a (URL-safe or not) Base64-encoded UUID to its canonical binary represen
 
 Convert a binary UUID to a URL-safe Base64 encoded UUID
 
+    my $bin = $ug->create_from_name(<namespace>, <name>);
+    my $uuid = $ug−>to_b64_urlsafe($bin);
+
 # AUTHOR
 
 Leon Brocard, `<acme@astray.com>`,
