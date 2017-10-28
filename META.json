@@ -26,11 +26,6 @@
       ]
    },
    "prereqs" : {
-      "build" : {
-         "requires" : {
-            "ExtUtils::MakeMaker" : "0"
-         }
-      },
       "configure" : {
          "requires" : {
             "Module::Build::Tiny" : "0.035"
@@ -48,9 +43,13 @@
       "runtime" : {
          "requires" : {
             "Data::UUID" : "0",
-            "MIME::Base64::URLSafe" : "0",
-            "Test::More" : "0.01",
+            "MIME::Base64" : "3.15",
             "perl" : "5.008001"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0.98"
          }
       }
    },
