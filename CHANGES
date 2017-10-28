@@ -1,6 +1,8 @@
 ChangeLog for Data::UUID::Base64URLSafe:
 
 {{$NEXT}}
+
+0.35 2017-10-28T16:19:26Z
     - migrate to minil
     - stop using MIME::Base64::URLSafe because MIME::Base64::encode_base64url is available
     - and fixed the POD
