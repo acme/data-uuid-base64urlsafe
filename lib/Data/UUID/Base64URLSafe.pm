@@ -117,8 +117,7 @@ Yuki Yoshida(worthmine) C<< <worthmine@gmail.com> >>
 
 =head1 LICENSE
 
-Copyright (C) 2008, Leon Brocard,
-Copyright (C) 2017, Yuki Yoshida.
+Copyright (C) 2008, Leon Brocard, 2017, Yuki Yoshida.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
