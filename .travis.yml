@@ -1,0 +1,17 @@
+language: perl
+sudo: false
+perl:
+- '5.8'
+- '5.10'
+- '5.12'
+- '5.14'
+- '5.16'
+- '5.18'
+- '5.20'
+- '5.22'
+- '5.24'
+- '5.26'
+notifications:
+  email: false
+  slack:
+    secure: a2aRCRrQQg38opJxR/vybM09BU+Ono8XAuwPCrCE2GcpbNvi2Iugzox8Mb5b2xuWPjeKUiuS4y/6IrsNxbEFA+vSKjY6+XQZ1o7yYKIdLUJTwnP5ceifxLBUMVDe3cGX+9gmjucOqD5dl/P5ZH1I8UiqAsfGzJUy3fWQHqCVuqo3llZrC0Nt6PAoUpsdEeCCTrSCEMXaYgsN7dtnP0RIaRJrjn1vhCgWXLdxbXUIKVkPCdoQ21abyDTbNEXAtHxvd+HdVx0Ld9XckNRGiaMXENQp5RXVwsctE87NiWr3F/a5NuZsCs6QntlQMybEwWIaCG6wXFojc5hadWrgDZavu39tn7zJvHKYjkpkGi7QIa5gDNvQxpNOClfTUADCH3LbAv+pYaoiWN5bD507+fs5rY1Hm0ErX5aot37WFt9/t6g4Ki3e/rE1hy76MCe6TV7IHqYtxqIxtYo2v2BPDDM0QbJVgC6mv5x+2IOfzZZq2uC/l86FIua5XfBPf5KIHjmx17ynzV+Ug+TRI4sWAY45IBPttKo6rj2CKCNcwt1xFZ9tBYJNQ98K7MVvh9J/szlhMFCxY7izoxArfGcrl0vOxj7pWk/hxHiLuL0eul01STlotglqvj5KoMsJsAZv8JxYJaOMmJdLNqsagCXGdmfh+l1HBY/PWweS/BMlyBxL8jc=
